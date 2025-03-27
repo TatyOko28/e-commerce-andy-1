@@ -1,0 +1,14 @@
+{
+  "name": "e-commerce-andy-1",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:next": "cd next && npm run dev",
+    "dev:sanity": "cd sanity && npm run dev",
+    "dev": "concurrently \"npm run dev:next\" \"npm run dev:sanity\"",
+    "vercel-build": "cd next && npm install && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
