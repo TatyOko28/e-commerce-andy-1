@@ -6,7 +6,7 @@
     "dev:next": "cd next && npm run dev",
     "dev:sanity": "cd sanity && npm run dev",
     "dev": "concurrently \"npm run dev:next\" \"npm run dev:sanity\"",
-    "vercel-build": "cd next && npm install && npm run build"
+    "vercel-build": "cd next && npm install --production=false && npm run build"
   },
   "dependencies": {
     "next": "^15.2.4"
