@@ -1,8 +1,15 @@
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24">
-      <h1 className="text-4xl font-bold">E-Commerce Shop</h1>
-      <p className="mt-4 text-xl">Welcome to our online store!</p>
+    <main style={{
+      display: 'flex',
+      minHeight: '100vh',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: '24px'
+    }}>
+      <h1 style={{ fontSize: '2.5rem', fontWeight: 'bold' }}>E-Commerce Shop</h1>
+      <p style={{ marginTop: '1rem', fontSize: '1.25rem' }}>Welcome to our online store!</p>
     </main>
   )
 }
