@@ -2,5 +2,8 @@
   "buildCommand": "npm run vercel-build",
   "framework": "nextjs",
   "installCommand": "npm install",
-  "outputDirectory": "next/.next"
+  "outputDirectory": "next/.next",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/next/$1" }
+  ]
 }
